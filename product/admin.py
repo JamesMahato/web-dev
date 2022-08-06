@@ -4,7 +4,7 @@ from product.models import Product,Order
 # Register your models here.
 
 class ProductAdmin(admin.ModelAdmin):
-    list_display = ('id','suit_name','suit_price','suit_brand','suit_desc','suit_image')
+    list_display = ('id','name','price','image')
 
 
 class OrderAdmin(admin.ModelAdmin):

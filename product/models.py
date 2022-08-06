@@ -2,23 +2,22 @@ import datetime
 from django.db import models
 from django.contrib.auth.models import User
 
-import product
+
 
 # Create your models here.
 
 class Product(models.Model):
     id = models.AutoField(auto_created=True,primary_key=True)
-    suit_name = models.CharField(max_length=120)
-    suit_price = models.CharField(max_length=130)
-    suit_brand = models.CharField(max_length=100,blank=True)
-    suit_desc = models.CharField(max_length=2000,blank=True)
-    suit_image = models.FileField(upload_to="static/image",default="default.jpg")
+    name = models.CharField(max_length=120)
+    price = models.CharField(max_length=130)
+    
+    image = models.FileField(upload_to="static/image",default="default.jpg")
 
     class Meta:
         db_table = "product"
 
     def __str__(self):
-        return self.suit_name
+        return self.name
     
 
     

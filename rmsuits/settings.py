@@ -40,8 +40,6 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'home.apps.HomeConfig',
-    'blazers.apps.BlazersConfig',
-    'shirts.apps.ShirtsConfig',
     'users.apps.UsersConfig',
     'product.apps.ProductConfig',
      'cart'

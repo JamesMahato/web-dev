@@ -1,5 +1,4 @@
-from audioop import add
-from unicodedata import name
+
 from cart.cart import Cart
 from product.models import Product, Order
 from django.shortcuts import render, redirect, HttpResponse

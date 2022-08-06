@@ -39,7 +39,7 @@
                             <p>Web ID: 1089772</p>
                         </td>
                         <td class="cart_price">
-                            <p>${{value.price}}</p>
+                            <p>Rs{{value.price}}</p>
                         </td>
                         <td class="cart_quantity">
                             <div class="cart_quantity_button">
@@ -49,7 +49,7 @@
                             </div>
                         </td>
                         <td class="cart_total">
-                            <p class="cart_total_price">${{value.price|multiply:value.quantity}}</p>
+                            <p class="cart_total_price">RS{{value.price|multiply:value.quantity}}</p>
                         </td>
                         <td class="cart_delete">
                             <a class="cart_quantity_delete" href="{% url 'item_clear' key%}" style="color: black;">Delete<i class="fa fa-times"></i></a>
@@ -68,7 +68,7 @@
                     </td>
                     <td>
                         <h4>
-                            ${{cart_total_amount}}
+                            Rs{{cart_total_amount}}
                         </h4>
                     </td>
                 </tfoot>
